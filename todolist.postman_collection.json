@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "b047ec4c-6ab1-4395-86fd-2926cfb6a519",
+		"name": "todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34878696"
+	},
+	"item": [
+		{
+			"name": "getTodo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delTodo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000"
+			},
+			"response": []
+		},
+		{
+			"name": "addTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"todo\": \"makan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000"
+			},
+			"response": []
+		},
+		{
+			"name": "editTodo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": 0,\r\n      \"todo\": \"ngoding\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000"
+			},
+			"response": []
+		}
+	]
+}
